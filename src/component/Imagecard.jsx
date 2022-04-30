@@ -1,8 +1,8 @@
 import React from "react"
-export default function Image({src,name}){
+export default function Image(props){
     return(
-        <div className="clash-card__image clash-card__image--${name}">
-                    <img src={src} alt={name} />
-                </div>
+        <div className={`clash-card__image clash-card__image--${props.name}`}>
+            <img src={props.src} alt={props.name} />
+        </div>
     )
 }

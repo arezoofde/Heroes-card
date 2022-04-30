@@ -2,15 +2,15 @@ import React from "react";
 import Imagecard from './Imagecard'
 import UnitStet from "./UtiteStates";
 import Itemcard from './Itemcard'
-export default function Card({hero}) {
+export default function Card(props) {
     return(
         <div className="clash-card barbarian">
-                <Imagecard src={hero.src} name={hero.name}/>
-                <Itemcard type="clash-card__level clash-card__level--barbarian">{hero.level}</Itemcard>
-                <Itemcard type="clash-card__unit-name">The {hero.name}</Itemcard>
-                <Itemcard type="clash-card__unit-description"> {hero.description}</Itemcard>
+                <Imagecard src={props.src} name={props.name}/>
+                <Itemcard type="clash-card__level clash-card__level--barbarian">{props.level}</Itemcard>
+                <Itemcard type="clash-card__unit-name">The {props.name}</Itemcard>
+                <Itemcard type="clash-card__unit-description"> {props.description}</Itemcard>
             
-                <UnitStet unit={hero.unit} name={hero.name}/>
+                <UnitStet unit={props.unit} name={props.name}/>
 
             </div> 
            

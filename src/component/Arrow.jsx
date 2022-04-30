@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Arrow() {
+export default function Arrow(props) {
     return(
         <div className="arrow-wrapper">
                 <div className="round">
                     <div id="cta">
-                        <span className="arrow {direction}" onClick={handelClick}></span>
+                        <span className={`arrow ${props.direction}`} onClick={props.handelClick}></span>
                     </div>
                 </div>
             </div>

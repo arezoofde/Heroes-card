@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Itemcard({type, children}) {
+export default function Itemcard(props) {
     return(
-        <div className={type}>{children}</div>
+        <div className={props.type}>{props.children}</div>
     )
 }
